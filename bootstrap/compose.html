@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Compose Message | CSUN COMP 484 - Project 1</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../frameworks/bootstrap-4.0.0-alpha/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Mailman</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="inbox.html">Mail <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-9 offset-md-3">
+          <h1>Compose New Message</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="list-group">
+            <a href="inbox.html"class="list-group-item justify-content-between">
+              Inbox
+              <span class="badge badge-default badge-pill">3</span>
+            </a>
+            <a href="trash.html" class="list-group-item justify-content-between">
+                Trash
+                <span class="badge badge-default badge-pill">2</span>
+            </a>
+            <a href="spam.html" class="list-group-item justify-content-between">
+                Spam
+                <span class="badge badge-default badge-pill">1</span>
+            </a>
+            <a href="compose.html" class="list-group-item justify-content-between active">
+              Compose New Message
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-9">
+          <form action="message-sent.html">
+            
+            <div class="form-group">
+              <label for="recipient">
+                Recipient
+              </label>
+              <select name="recipient" id="recipient" class="form-control">
+                <option value="" selected="selected">-- Select a Recipient --</option>
+                <option value="someguy">Some Guy</option>
+                <option value="otherguy">Other Guy</option>
+                <option value="matt">Matthew Fritz</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="title">
+                Title
+              </label>
+              <input type="text" class="form-control" name="title" id="title" placeholder="Enter message title" />
+            </div>
+
+            <div class="form-group">
+              <label for="body">
+                Body
+              </label>
+              <textarea name="body" id="body" class="form-control" placeholder="Enter message body"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="../frameworks/bootstrap-4.0.0-alpha/js/bootstrap.min.js"></script>
+  </body>
+</html>

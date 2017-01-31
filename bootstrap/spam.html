@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Inbox | CSUN COMP 484 - Project 1</title>
+    <title>Spam | CSUN COMP 484 - Project 1</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -35,24 +35,24 @@
 
       <div class="row">
         <div class="col-sm-12 col-md-9 offset-md-3">
-          <h1>Inbox</h1>
+          <h1>Spam</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3">
           <div class="list-group">
-            <a href="inbox.html"class="list-group-item justify-content-between active">
+            <a href="inbox.html"class="list-group-item justify-content-between">
               Inbox
               <span class="badge badge-default badge-pill">3</span>
             </a>
             <a href="trash.html" class="list-group-item justify-content-between">
-              Trash
-              <span class="badge badge-default badge-pill">2</span>
+                Trash
+                <span class="badge badge-default badge-pill">2</span>
             </a>
-            <a href="spam.html" class="list-group-item justify-content-between">
-              Spam
-              <span class="badge badge-default badge-pill">1</span>
+            <a href="spam.html" class="list-group-item justify-content-between active">
+                Spam
+                <span class="badge badge-default badge-pill">1</span>
             </a>
             <a href="compose.html" class="list-group-item list-group-item-info justify-content-between">
               Compose New Message
@@ -73,90 +73,18 @@
               <tr>
                 <td>
                   <label for="mail_1" class="sr-only">
-                    Select message "This Message Sucks"
+                    Select message "Spam message"
                   </label>
                   <input type="checkbox" name="mail[]" id="mail_1" />
                 </td>
                 <td>
-                  <strong>Matthew Fritz</strong>
+                  Some Guy
                 </td>
                 <td>
-                  <strong>This message sucks</strong>
+                  Spam message
                 </td>
                 <td>
-                  <strong>January 30, 2017</strong>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <label for="mail_2" class="sr-only">
-                    Select message "A sorry excuse for a message"
-                  </label>
-                  <input type="checkbox" name="mail[]" id="mail_2" />
-                </td>
-                <td>
-                  <strong>Matthew Fritz</strong>
-                </td>
-                <td>
-                  <strong>A sorry excuse for a message</strong>
-                </td>
-                <td>
-                  <strong>January 29, 2017</strong>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <label for="mail_3" class="sr-only">
-                    Select message "Hey"
-                  </label>
-                  <input type="checkbox" name="mail[]" id="mail_3" />
-                </td>
-                <td>
-                  <strong>Matthew Fritz</strong>
-                </td>
-                <td>
-                  <strong>Hey</strong>
-                </td>
-                <td>
-                  <strong>January 28, 2017</strong>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <label for="mail_4" class="sr-only">
-                    Select message "Second message"
-                  </label>
-                  <input type="checkbox" name="mail[]" id="mail_4" />
-                </td>
-                <td>
-                  Matthew Fritz
-                </td>
-                <td>
-                  Second message
-                </td>
-                <td>
-                  January 27, 2017
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <label for="mail_5" class="sr-only">
-                    Select message "First message"
-                  </label>
-                  <input type="checkbox" name="mail[]" id="mail_5" />
-                </td>
-                <td>
-                  Matthew Fritz
-                </td>
-                <td>
-                  First message
-                </td>
-                <td>
-                  January 27, 2017
+                  January 30, 2017
                 </td>
               </tr>
 
@@ -164,10 +92,7 @@
                 <td colspan="4">
                   <div class="float-right">
                     <button class="btn btn-primary">
-                      Mark as Read
-                    </button>
-                    <button href="#" class="btn btn-warning">
-                      Mark as Spam
+                      Move to Inbox
                     </button>
                     <button href="#" class="btn btn-danger">
                       Delete
