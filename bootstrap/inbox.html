@@ -13,12 +13,34 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <h1>Sample Mail Application</h1>
+        <div class="col-sm-12">
+          <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Mailman</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="inbox.html">Mail <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-sm-3 col-xs-12">
+        <div class="col-xs-12">
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3">
           <div class="list-group">
             <a href="inbox.html"class="list-group-item justify-content-between active">
               Inbox
@@ -35,16 +57,16 @@
           </div>
         </div>
 
-        <div class="col-sm-9 col-xs-12">
-          <table class="table">
-            <tr>
-              <th></th>
-              <th>Sender</th>
-              <th>Title</th>
-              <th>Received</th>
-            </tr>
+        <div class="col-xs-12 col-sm-12 col-md-9">
+          <form>
+            <table class="table">
+              <tr>
+                <th></th>
+                <th>Sender</th>
+                <th>Title</th>
+                <th>Received</th>
+              </tr>
 
-            <form>
               <tr>
                 <td>
                   <label for="mail_1" class="sr-only">
@@ -138,15 +160,15 @@
               <tr>
                 <td colspan="4">
                   <div class="float-right">
-                    <a href="#" class="btn btn-primary">
+                    <button class="btn btn-primary">
                       Mark as Read
-                    </a>
-                    <a href="#" class="btn btn-warning">
+                    </button>
+                    <button href="#" class="btn btn-warning">
                       Mark as Spam
-                    </a>
-                    <a href="#" class="btn btn-danger">
+                    </button>
+                    <button href="#" class="btn btn-danger">
                       Delete
-                    </a>
+                    </button>
                   </div>
                 </td>
               </tr>
