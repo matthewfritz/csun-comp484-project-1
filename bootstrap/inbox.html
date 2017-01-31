@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inbox | CSUN COMP 484 - Project 1</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../frameworks/bootstrap-4.0.0-alpha/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Sample Mail Application</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-xs-12">
+          <div class="list-group">
+            <a href="inbox.html"class="list-group-item justify-content-between active">
+              Inbox
+              <span class="badge badge-default badge-pill">3</span>
+            </a>
+            <a href="#" class="list-group-item justify-content-between">
+                Trash
+                <span class="badge badge-default badge-pill">2</span>
+            </a>
+            <a href="#" class="list-group-item justify-content-between">
+                Spam
+                <span class="badge badge-default badge-pill">1</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-9 col-xs-12">
+          <table class="table">
+            <tr>
+              <th></th>
+              <th>Sender</th>
+              <th>Title</th>
+              <th>Received</th>
+            </tr>
+
+            <form>
+              <tr>
+                <td>
+                  <label for="mail_1" class="sr-only">
+                    Select message "This Message Sucks"
+                  </label>
+                  <input type="checkbox" name="mail[]" id="mail_1" />
+                </td>
+                <td>
+                  <strong>Matthew Fritz</strong>
+                </td>
+                <td>
+                  <strong>This message sucks</strong>
+                </td>
+                <td>
+                  <strong>January 30, 2017</strong>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="mail_2" class="sr-only">
+                    Select message "A sorry excuse for a message"
+                  </label>
+                  <input type="checkbox" name="mail[]" id="mail_2" />
+                </td>
+                <td>
+                  <strong>Matthew Fritz</strong>
+                </td>
+                <td>
+                  <strong>A sorry excuse for a message</strong>
+                </td>
+                <td>
+                  <strong>January 29, 2017</strong>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="mail_3" class="sr-only">
+                    Select message "Hey"
+                  </label>
+                  <input type="checkbox" name="mail[]" id="mail_3" />
+                </td>
+                <td>
+                  <strong>Matthew Fritz</strong>
+                </td>
+                <td>
+                  <strong>Hey</strong>
+                </td>
+                <td>
+                  <strong>January 28, 2017</strong>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="mail_4" class="sr-only">
+                    Select message "Second message"
+                  </label>
+                  <input type="checkbox" name="mail[]" id="mail_4" />
+                </td>
+                <td>
+                  Matthew Fritz
+                </td>
+                <td>
+                  Second message
+                </td>
+                <td>
+                  January 27, 2017
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="mail_5" class="sr-only">
+                    Select message "First message"
+                  </label>
+                  <input type="checkbox" name="mail[]" id="mail_5" />
+                </td>
+                <td>
+                  Matthew Fritz
+                </td>
+                <td>
+                  First message
+                </td>
+                <td>
+                  January 27, 2017
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="4">
+                  <div class="float-right">
+                    <a href="#" class="btn btn-primary">
+                      Mark as Read
+                    </a>
+                    <a href="#" class="btn btn-warning">
+                      Mark as Spam
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                      Delete
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="../frameworks/bootstrap-4.0.0-alpha/js/bootstrap.min.js"></script>
+  </body>
+</html>
